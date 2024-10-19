@@ -94,37 +94,44 @@ const DataTable = () => {
               <td className="px-2 py-4 truncate">{item?.project}</td>
               <td className="px-2 py-4 truncate">{item?.notes}</td>
               <td className="px-2 py-4 truncate">
-                {approve ? (
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => setReject(!reject)}
-                      className="text-red-600"
-                    >
-                      Reject
-                    </button>
-                    <button
-                      onClick={() => setApprove(!approve)}
-                      className="px-4 py-1 text-white bg-green-400 rounded-lg"
-                    >
-                      Approve
-                    </button>
+                <div className="flex justify-between items-center max-w-[200px]">
+                  {approve ? (
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => setReject(!reject)}
+                        className="text-red-600"
+                      >
+                        Reject
+                      </button>
+                      <button
+                        onClick={() => setApprove(!approve)}
+                        className="px-4 py-1 text-white bg-green-400 rounded-lg"
+                      >
+                        Approve
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="flex gap-2">
+                      <button
+                        onClick={() => setReject(!reject)}
+                        className="text-red-600"
+                      >
+                        Reject
+                      </button>
+                      <button
+                        onClick={() => setApprove(!approve)}
+                        className="px-4 py-1 text-gray-500 border-gray-600 rounded-lg border-[1px]"
+                      >
+                        undo
+                      </button>
+                    </div>
+                  )}
+                  <div className="flex flex-col gap-[2px]">
+                    <div className="w-[5px] h-[5px] bg-gray-500 rounded-full"></div>
+                    <div className="w-[5px] h-[5px] bg-gray-500 rounded-full"></div>
+                    <div className="w-[5px] h-[5px] bg-gray-500 rounded-full"></div>
                   </div>
-                ) : (
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => setReject(!reject)}
-                      className="text-red-600"
-                    >
-                      Reject
-                    </button>
-                    <button
-                      onClick={() => setApprove(!approve)}
-                      className="px-4 py-1 text-gray-500 border-gray-600 rounded-lg border-[1px]"
-                    >
-                      undo
-                    </button>
-                  </div>
-                )}
+                </div>
               </td>
             </tr>
           ))}

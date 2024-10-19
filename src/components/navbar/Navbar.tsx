@@ -1,4 +1,5 @@
 import SearchFiled from "../form_component/SearchFiled";
+import userImage from "../../assets/user.jpg";
 
 const Navbar = () => {
   return (
@@ -23,7 +24,7 @@ const Navbar = () => {
             <p className="font-semibold text-md">Sadik Hasan</p>
             <p className="text-gray-600">Friday, 29 September</p>
           </div>
-          <img className="w-12 h-12 rounded-md" src="/public/user.jpg" alt="" />
+          <img className="w-12 h-12 rounded-md" src={userImage} alt="" />
         </div>
       </div>
     </nav>
