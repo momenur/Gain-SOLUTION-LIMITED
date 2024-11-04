@@ -3,9 +3,9 @@ import TableFilter from "./TableFilter";
 
 const Table = () => {
   return (
-    <div className="p-6 mt-6 bg-white border border-gray-300 rounded-lg ">
-      <div className="flex justify-between">
-        <h1 className="flex justify-between text-2xl font-semibold">
+    <div className="p-6 mt-6 bg-[#FFFFFF] border border-gray-300 rounded-lg w-full">
+      <div className="flex flex-col justify-between w-full md:flex-row">
+        <h1 className="mb-4 text-2xl font-semibold md:mb-0">
           Employee Time Logs
         </h1>
         <TableFilter />
@@ -18,7 +18,7 @@ const Table = () => {
           <li>
             <a
               href="#"
-              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 ms-0 border-e-0 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 ms-0 border-e-0 rounded-s-lg hover:bg-gray-100 hover:text-gray-700"
             >
               Previous
             </a>
@@ -26,7 +26,7 @@ const Table = () => {
           <li>
             <a
               href="#"
-              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               1
             </a>
@@ -34,7 +34,7 @@ const Table = () => {
           <li>
             <a
               href="#"
-              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               2
             </a>
@@ -43,7 +43,7 @@ const Table = () => {
             <a
               href="#"
               aria-current="page"
-              className="flex items-center justify-center h-8 px-3 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white"
+              className="flex items-center justify-center h-8 px-3 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700"
             >
               3
             </a>
@@ -51,7 +51,7 @@ const Table = () => {
           <li>
             <a
               href="#"
-              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               4
             </a>
@@ -59,7 +59,7 @@ const Table = () => {
           <li>
             <a
               href="#"
-              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
             >
               5
             </a>
@@ -67,7 +67,7 @@ const Table = () => {
           <li>
             <a
               href="#"
-              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+              className="flex items-center justify-center h-8 px-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700"
             >
               Next
             </a>

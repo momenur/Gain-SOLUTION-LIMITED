@@ -5,8 +5,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen px-24 bg-gray-200">
-        <Home />
+      <div className="min-h-screen bg-gray-200 ">
+        <div className="px-4 md:px-8 lg:px-24">
+          <Home />
+        </div>
       </div>
     </>
   );
