@@ -1,21 +1,13 @@
 type TSearchProps = {
-  searchWidth?: string;
+  placeholder?: string;
   hidden?: string;
 };
 
-const SearchFiled = ({ searchWidth, hidden }: TSearchProps) => {
+const SearchFiled = ({ placeholder }: TSearchProps) => {
   return (
-    <div
-      className={`md:relative ${hidden} md:block ${
-        searchWidth ? `max-w-[${searchWidth}]` : "max-w-full w-full md:max-w-96"
-      }`}
-    >
-      <div
-        className={`relative ${
-          searchWidth ? `min-w-[${searchWidth}]` : "min-w-full"
-        }`}
-      >
-        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+    <div className="w-full">
+      <div className="relative w-full ">
+        <div className="absolute inset-y-0 left-0 flex items-center w-full pl-3 pointer-events-none">
           <svg
             className="w-4 h-4 text-gray-500"
             aria-hidden="true"
@@ -36,7 +28,7 @@ const SearchFiled = ({ searchWidth, hidden }: TSearchProps) => {
           type="search"
           id="search"
           className="block w-full px-4 py-2 pl-10 text-gray-800 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
-          placeholder="Search"
+          placeholder={placeholder}
           required
         />
       </div>

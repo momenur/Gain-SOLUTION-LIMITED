@@ -6,7 +6,7 @@ function App() {
     <>
       <Navbar />
       <div className="min-h-screen bg-gray-200 ">
-        <div className="px-4 md:px-8 lg:px-24">
+        <div className="px-4 mx-auto max-w-screen-2xl md:px-8">
           <Home />
         </div>
       </div>

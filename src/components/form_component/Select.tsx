@@ -17,7 +17,7 @@ const Select: React.FC<SelectProps> = ({
   onChange,
 }) => {
   return (
-    <div className="w-full md:max-w-[190px] min-w-[150px]">
+    <div className="w-full ">
       <select
         onChange={(e) => onChange && onChange(e.target.value)}
         className="bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"

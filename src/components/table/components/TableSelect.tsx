@@ -34,7 +34,7 @@ const TableSelect: React.FC = () => {
   };
 
   return (
-    <div className="relative inline-block md:max-w-[190px] w-full min-w-[150px]">
+    <div className="relative inline-block w-full">
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}

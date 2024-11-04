@@ -4,13 +4,15 @@ import TableFilter from "./TableFilter";
 const Table = () => {
   return (
     <div className="p-6 mt-6 bg-[#FFFFFF] border border-gray-300 rounded-lg w-full">
-      <div className="flex flex-col justify-between w-full md:flex-row">
-        <h1 className="mb-4 text-2xl font-semibold md:mb-0">
+      <div className="flex flex-col items-center justify-between w-full lg:flex-row">
+        <h1 className="mb-4 text-2xl  font-semibold lg:min-w-[300px] md:mb-0">
           Employee Time Logs
         </h1>
-        <TableFilter />
+        <div className="w-full">
+          <TableFilter />
+        </div>
       </div>
-      <div>
+      <div className="min:w-full">
         <DataTable />
       </div>
       <div className="flex justify-end mt-4 mb-10">

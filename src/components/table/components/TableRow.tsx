@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DropdownMenu from "./DropDown";
 import { data } from "../../../data/data";
+import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 
 type TUndo = {
   id: string;
@@ -67,23 +68,23 @@ const TableRow = () => {
     <>
       {" "}
       {tableData.map((item) => (
-        <tr key={item.id} className="bg-white border-b">
+        <tr key={item.id} className="bg-white border-b min:w-full">
           <th
             scope="row"
             className="px-6 py-4 font-medium text-gray-800 whitespace-nowrap"
           >
             {item.id}
           </th>
-          <td className="px-2 py-4 truncate">{item.employee}</td>
-          <td className="px-2 py-4 truncate">{item.duration}</td>
-          <td className="px-2 py-4 truncate">
+          <td className="px-2 py-4 font-medium truncate">{item.employee}</td>
+          <td className="px-2 py-4 font-medium truncate">{item.duration}</td>
+          <td className="px-2 py-4 font-medium truncate">
             <div className="flex flex-col gap-1">
               <p>{item.start_time}</p>
               {item.end_time && <p>{item.end_time}</p>}
             </div>
           </td>
-          <td className="px-2 py-4 truncate">{item.due_hours}</td>
-          <td className={`px-2 truncate`}>
+          <td className="px-2 py-4 font-medium truncate">{item.due_hours}</td>
+          <td className={`px-2 font-medium truncate`}>
             <div
               className={`flex max-w-min items-center gap-2 py-1 px-2 rounded-2xl ${
                 item.department === "Design"
@@ -113,17 +114,17 @@ const TableRow = () => {
               <p>{item.department}</p>
             </div>
           </td>
-          <td className="px-2 py-4 truncate">{item.project}</td>
-          <td className="px-2 py-4 truncate">{item.notes}</td>
-          <td className="px-2 py-4 truncate">
-            <div className="flex justify-between items-center max-w-[200px]">
+          <td className="px-2 py-4 font-medium truncate">{item.project}</td>
+          <td className="px-2 py-4 font-medium truncate ">{item.notes}</td>
+          <td className="flex py-4 truncate ">
+            <div className="flex items-center justify-between w-[200px]">
               <div className="flex-1 pe-2">
-                <div className="flex justify-between gap-2">
+                <div className="flex gap-2">
                   {item.approved ? (
                     <>
                       <button
                         onClick={() => toggleReject(item.id)}
-                        className="font-semibold text-[#E02600]"
+                        className="font-semibold text-[#E02600] flex-1"
                       >
                         Reject
                       </button>
@@ -139,9 +140,10 @@ const TableRow = () => {
                     <>
                       <button
                         // onClick={() => toggleReject(item.id)}
-                        className="font-semibold bg-[#FEF7F4] rounded-lg px-2 py-1  text-[#E02600] border-[1px] border-[#E02600]"
+                        className="font-semibold bg-[#FEF7F4] rounded-lg px-2 py-1  text-[#E02600] border-[1px] border-[#E02600] flex items-center gap-2"
                       >
-                        Rejected
+                        <FaTimesCircle />
+                        <span> Rejected</span>
                       </button>
 
                       <button
@@ -155,8 +157,9 @@ const TableRow = () => {
                     </>
                   ) : (
                     <>
-                      <button className="font-semibold bg-green-100 rounded-lg px-2 py-1 text-[#089624] border-[1px] border-[#089624]">
-                        Approved
+                      <button className="font-semibold bg-green-100 rounded-lg px-2 py-1 text-[#089624] border-[1px] border-[#089624] flex items-center gap-2">
+                        <FaCheckCircle />
+                        <span>Approved</span>
                       </button>
                       <button
                         onClick={() =>
