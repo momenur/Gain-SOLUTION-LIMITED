@@ -15,8 +15,8 @@ export const data = [
   },
   {
     id: "#1255",
-    employee: "Sadin Hasan",
-    duration: "03 hr",
+    employee: "Jhon Due",
+    duration: "03 hr 30 min",
     start_time: "07:15 am- 10:15 am",
     due_hours: "05 hr",
     department: "Development",
@@ -30,7 +30,7 @@ export const data = [
   {
     id: "#1256",
     employee: "Sadin Hasan",
-    duration: "03 hr",
+    duration: "03 hr 30 min",
     start_time: "07:15 am- 10:15 am",
     end_time: "09:15 am- 1:15 pm",
     due_hours: "05 hr",
@@ -44,10 +44,10 @@ export const data = [
   },
   {
     id: "#1257",
-    employee: "Sadin Hasan",
+    employee: "Sakib Hasan",
     duration: "03 hr",
     start_time: "07:15 am- 10:15 am",
-    due_hours: "05 hr",
+    due_hours: "05 hr 30 min",
     department: "Sales",
     project: "CRM Project",
     notes: "Working On Data Management",
@@ -59,7 +59,7 @@ export const data = [
   {
     id: "#1258",
     employee: "Sadin Hasan",
-    duration: "03 hr",
+    duration: "03 hr 30 min",
     start_time: "07:15 am- 10:15 am",
     due_hours: "05 hr",
     department: "Product",
@@ -73,10 +73,10 @@ export const data = [
   },
   {
     id: "#1259",
-    employee: "Sadin Hasan",
+    employee: "Momenul Islam",
     duration: "03 hr",
     start_time: "07:15 am- 10:15 am",
-    due_hours: "05 hr",
+    due_hours: "05 hr 30 min",
     department: "Development",
     project: "CRM Project",
     notes: "Working On Data Management",
@@ -87,7 +87,7 @@ export const data = [
   },
   {
     id: "#1260",
-    employee: "Sadin Hasan",
+    employee: "Shakil Khan",
     duration: "03 hr",
     start_time: "07:15 am- 10:15 am",
     due_hours: "05 hr",
